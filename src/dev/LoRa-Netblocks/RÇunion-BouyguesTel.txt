@@ -1,0 +1,3 @@
+un device, un payload au lieu de faire de l'agrégation
+
+Homerider -> relai 

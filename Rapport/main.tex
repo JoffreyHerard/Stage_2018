@@ -1,0 +1,138 @@
+\documentclass[a4paper]{report}
+
+%====================== PACKAGES ======================
+
+\usepackage[french]{babel}
+%pour gérer les positionnement d'images
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{url}
+%pour les informations sur un document compilé en PDF et les liens externes / internes
+\usepackage{hyperref}
+%pour la mise en page des tableaux
+\usepackage{array}
+\usepackage{tabularx}
+%pour utiliser \floatbarrier
+%\usepackage{placeins}
+%\usepackage{floatrow}
+%espacement entre les lignes
+\usepackage{setspace}
+%modifier la mise en page de l'abstract
+\usepackage{abstract}
+%police et mise en page (marges) du document
+\usepackage[T1]{fontenc}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+%Pour les galerie d'images
+\usepackage{subfig}
+\usepackage{}
+\usepackage{xcolor}
+\usepackage{framed}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{hyperref}
+\usepackage{pifont}
+\usepackage{amsthm,thmtools,amssymb, amsmath, mathtools} %pour les mathématiques
+\colorlet{shadecolor}{lightgray!25}
+\usepackage{algorithm}
+\usepackage[end]{algpseudocode}
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\pagestyle{fancy}
+\renewcommand\headrulewidth{1pt}
+\fancyhead[L]{Titre}
+\fancyhead[R]{URCA}
+\renewcommand\footrulewidth{1pt}
+\fancyfoot[L]{HERARD Joffrey}
+\fancyfoot[C]{
+\textbf{Page \thepage/\pageref{LastPage}}}
+\fancyfoot[R]{2017-2018}
+\setlength{\headheight}{14pt}
+%====================== INFORMATION ET REGLES ======================
+%rajouter les numérotation pour les \paragraphe et \subparagraphe
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+\hypersetup{							% Information sur le document
+pdfauthor = {HERARD JOFFREY}			% Auteurs
+pdftitle = {Stage -
+			TITRE},			% Titre du document
+pdfsubject = {Rapport de Stage},		% Sujet
+pdfkeywords = {Tag1, Tag2, Tag3, ...},	% Mots-clefs
+pdfstartview={FitH}}					% ajuste la page à la largueur de l'écran
+%pdfcreator = {MikTeX},% Logiciel qui a crée le document
+%pdfproducer = {}} % Société avec produit le logiciel
+
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\newtheorem{post}{Postulat}
+\newtheorem{mydef}{Définition}
+%%
+%======================== DEBUT DU DOCUMENT ========================
+
+\begin{document}
+
+%régler l'espacement entre les lignes
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+%page de garde
+\input{./title.tex}
+
+%page blanche
+\newpage
+~
+%ne pas numéroter cette page
+\thispagestyle{empty}
+\newpage
+
+\input{./abstract.tex}
+
+\tableofcontents
+\thispagestyle{empty}
+\setcounter{page}{0}
+%ne pas numéroter le sommaire
+
+\newpage
+
+%espacement entre les lignes d'un tableau
+\renewcommand{\arraystretch}{1.5}
+
+%====================== INCLUSION DES PARTIES ======================
+
+~
+\thispagestyle{empty}
+%recommencer la numérotation des pages à "1"
+\setcounter{page}{0}
+\newpage
+
+	   
+\input{./presentation.tex}
+
+\input{./existant.tex}
+ 
+\input{./besoins.tex}
+
+\input{./autre_partie.tex}
+\input{./resultats.tex}
+\input{./regret.tex}
+%\input{./hypervO.tex}
+\input{./bilan.tex}
+
+\newpage
+
+\input{./annexes.tex}
+
+\newpage
+\begin{thebibliography}{9}
+
+   \bibitem{Docker}
+          Documentation Docker
+          \url{https://docs.docker.com/}.
+
+\end{thebibliography}
+
+
+\end{document}

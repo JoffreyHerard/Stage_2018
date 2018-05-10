@@ -1,0 +1,6 @@
+La documentation qui marche :
+https://github.com/marcuscbehrens/loralife
+
+Cablage à faire :
+https://startiot.telenor.com/learning/getting-started-with-adafruit-feather-m0-lora/
+

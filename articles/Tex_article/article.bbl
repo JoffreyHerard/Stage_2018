@@ -1,0 +1,45 @@
+\begin{thebibliography}{1}
+
+\bibitem{Haddad2009}
+E.~C. Haddad and J.~C. Gregoire.
+\newblock {\em Implementation issues for the deployment of a WMN with a hybrid
+  fixed/cellular backhaul network in emergency situations}, pages 525--529.
+\newblock 2009 1st International Conference on Wireless Communication,
+  Vehicular Technology, Information Theory and Aerospace {\&} Electronic
+  Systems Technology. 2009.
+
+\bibitem{Ng2013}
+Ming~Ann Ng and K.~L.~A. Yau.
+\newblock {\em An energy-efficient Hybrid Wireless Mesh Protocol (HWMP) for
+  IEEE 802.11s mesh networks}, pages 17--21.
+\newblock 2013 IEEE International Conference on Control System, Computing and
+  Engineering. 2013.
+
+\bibitem{Palan2017}
+N.~G. Palan, B.~V. Barbadekar, and S.~Patil.
+\newblock {\em Low energy adaptive clustering hierarchy (LEACH) protocol: A
+  retrospective analysis}, pages 1--12.
+\newblock 2017 International Conference on Inventive Systems and Control
+  (ICISC). 2017.
+
+\bibitem{Sharma2006}
+G.~Sharma, N.~B. Shroff, and R.~R. Mazumdar.
+\newblock {\em Hybrid sensor and mesh networks: paradigms for fair and energy
+  efficient communication}, pages 83--92.
+\newblock 2006 2nd IEEE Workshop on Wireless Mesh Networks. 2006.
+
+\bibitem{Singh2012}
+S.~Singh, K.~L. Huang, and B.~S.~P. Lin.
+\newblock {\em An energy-efficient scheme for WiFi-capable M2M devices in
+  hybrid LTE network}, pages 126--130.
+\newblock 2012 IEEE International Conference on Advanced Networks and
+  Telecommunciations Systems (ANTS). 2012.
+
+\bibitem{Tanaka2018}
+K.~Tanaka, M.~Murase, and K.~Naito.
+\newblock {\em Prototype implementation of BLE based automated data collection
+  scheme in agricultural measurement system}, pages 1--2.
+\newblock 2018 15th IEEE Annual Consumer Communications {\&} Networking
+  Conference (CCNC). 2018.
+
+\end{thebibliography}

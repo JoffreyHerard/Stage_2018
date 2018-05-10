@@ -1,0 +1,2 @@
+Command used :
+sudo python grapheGenerator.py <LOWER BOUND> <UPPER BOUND>
