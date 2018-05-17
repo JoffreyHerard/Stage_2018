@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.11)  3 MAY 2018 14:36
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.11)  15 MAY 2018 17:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -293,7 +293,26 @@ LaTeX Warning: Overwriting file `./article.bib'.
 \openout15 = `article.bib'.
 
 
-(./article.aux)
+(./article.aux
+
+LaTeX Warning: Label `A' multiply defined.
+
+
+LaTeX Warning: Label `A' multiply defined.
+
+
+LaTeX Warning: Label `A' multiply defined.
+
+
+LaTeX Warning: Label `A' multiply defined.
+
+
+LaTeX Warning: Label `A' multiply defined.
+
+
+LaTeX Warning: Label `A' multiply defined.
+
+)
 \openout1 = `article.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
@@ -310,12 +329,11 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
 LaTeX Font Info:    ... okay on input line 101.
 
 -- Lines per column: 56 (exact).
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 126.
-LaTeX Font Info:    Try loading font information for U+msa on input line 126.
+LaTeX Font Info:    Try loading font information for U+msa on input line 141.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 126.
+LaTeX Font Info:    Try loading font information for U+msb on input line 141.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -330,48 +348,52 @@ File: harvest.png Graphic file (type QTm)
 
 
 ]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 184.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 193.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Missing character: There is no é in font ptmri7t!
-Missing character: There is no é in font ptmri7t!
-Missing character: There is no é in font ptmri7t!
-Missing character: There is no é in font ptmr7t!
-Missing character: There is no é in font ptmr7t!
-Missing character: There is no é in font ptmr7t!
-Missing character: There is no è in font ptmr7t!
-Missing character: There is no é in font ptmr7t!
-Missing character: There is no é in font ptmr7t!
-Missing character: There is no é in font ptmr7t!
-Missing character: There is no é in font ptmr7t!
-Missing character: There is no é in font ptmr7t!
-Missing character: There is no é in font ptmr7t!
-Missing character: There is no é in font ptmr7t!
-Missing character: There is no é in font ptmr7t!
-Missing character: There is no ê in font ptmr7t!
-Missing character: There is no é in font ptmr7t!
-Missing character: There is no ê in font ptmr7t!
-Missing character: There is no ç in font ptmr7t!
-Missing character: There is no é in font ptmr7t!
-Missing character: There is no é in font ptmr7t!
-Missing character: There is no é in font ptmr7t!
- [2]
-Underfull \hbox (badness 2521) in paragraph at lines 317--318
+Underfull \hbox (badness 6047) in paragraph at lines 252--253
+ \OT1/ptm/m/it/10 a) Send-ing func-tions: [][] \OT1/pcr/m/n/10 void send(freque
+ncy ,
+ []
+
+[2]
+Underfull \hbox (badness 2521) in paragraph at lines 323--324
 [] $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 msg; t\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/1
 0 listen\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 udef; candidate; timer \OT1/cmr/m/n/1
 0 +
  []
 
-LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <10> not available
-(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 339.
+[3]
+File: graphics_resultats/A/A.png Graphic file (type QTm)
+ <use  "graphics_resultats/A/A.png" >
+File: graphics_resultats/A/NA.png Graphic file (type QTm)
+ <use  "graphics_resultats/A/NA.png" >
+File: graphics_resultats/A/AvsNA.png Graphic file (type QTm)
 
+<use  "graphics_resultats/A/AvsNA.png" >
+File: graphics_resultats/bat/Sim_MSG_SEND_data_bat_gw_degree_gw.png Graphic fil
+e (type QTm)
+
+<use  "graphics_resultats/bat/Sim_MSG_SEND_data_bat_gw_degree_gw.png" >
+[4]
+File: graphics_resultats/bat/Sim_MSG_SEND_data_bat_in_degree_GW.png Graphic fil
+e (type QTm)
+ <use  "graphics_resultats/bat/Sim_MSG_SEND_data_bat_in_degree_GW.png" >
+File: graphics_resultats/msg/Sim-MSG_GW-MSG_SEND-degree_GW.png Graphic file (ty
+pe QTm)
+
+<use  "graphics_resultats/msg/Sim-MSG_GW-MSG_SEND-degree_GW.png" >
+File: graphics_resultats/msg/Sim-MSG_IN-MSG_SEND-degree_GW.png Graphic file (ty
+pe QTm)
+
+<use  "graphics_resultats/msg/Sim-MSG_IN-MSG_SEND-degree_GW.png" >
+(./article.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3]
-(./article.bbl)
+ [5])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -383,16 +405,20 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4
+[6
 
-] (./article.aux) ) 
+] (./article.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3729 strings out of 493591
- 54409 string characters out of 6143546
- 131215 words of memory out of 5000000
- 7096 multiletter control sequences out of 15000+600000
- 33072 words of font info for 83 fonts, out of 8000000 for 9000
+ 3715 strings out of 493591
+ 54508 string characters out of 6143546
+ 132215 words of memory out of 5000000
+ 7077 multiletter control sequences out of 15000+600000
+ 28563 words of font info for 66 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 30i,10n,26p,754b,298s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,7n,26p,943b,285s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on article.pdf (4 pages).
+Output written on article.pdf (6 pages).

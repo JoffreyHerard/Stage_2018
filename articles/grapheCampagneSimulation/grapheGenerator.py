@@ -171,11 +171,11 @@ def createGraph(lower_bound,upper_bound,filename,max_degree_IN,max_degree_GW,nb_
 	fic.write("user-interface=Cmdenv\n")
 	fic.write("network = lora.simulations.Net\n")
 	fic.write("sim-time-limit=86400s\n")
-	fic.write("repeat = 10\n")
 	fic.write("ned-path=/Users/joffreyherard/Documents/Master_2/Projet_fin_etude/dev/src/src;/Users/joffreyherard/Documents/Master_2/Projet_fin_etude/dev/src/simulations\n")
 	i = 0
 	while i < nbwell:
 		fic.write("Net.WELL["+str(i)+"].id="+str(i)+"\n")
+		fic.write("Net.WELL["+str(i)+"].file=\""+filename+"-10MSG\"\n")
 		fic.write("Net.WELL["+str(i)+"].slot="+str(8640)+"\n") #changer pour nb message
 		i=i+1
 	j = 0
@@ -202,11 +202,11 @@ def createGraph(lower_bound,upper_bound,filename,max_degree_IN,max_degree_GW,nb_
 	fic.write("user-interface=Cmdenv\n")
 	fic.write("network = lora.simulations.Net\n")
 	fic.write("sim-time-limit=86400s\n")
-	fic.write("repeat = 10\n")
 	fic.write("ned-path=/Users/joffreyherard/Documents/Master_2/Projet_fin_etude/dev/src/src;/Users/joffreyherard/Documents/Master_2/Projet_fin_etude/dev/src/simulations\n")
 	i = 0
 	while i < nbwell:
 		fic.write("Net.WELL["+str(i)+"].id="+str(i)+"\n")
+		fic.write("Net.WELL["+str(i)+"].file=\""+filename+"-NA-10MSG\"\n")
 		fic.write("Net.WELL["+str(i)+"].slot="+str(8640)+"\n") #changer pour nb message
 		i=i+1
 	j = 0
@@ -244,7 +244,6 @@ def createGraph(lower_bound,upper_bound,filename,max_degree_IN,max_degree_GW,nb_
 	fic.write("user-interface=Cmdenv\n")
 	fic.write("network = lora.simulations.Net\n")
 	fic.write("sim-time-limit=86400s\n")
-	fic.write("repeat = 10\n")
 	fic.write("ned-path=/Users/joffreyherard/Documents/Master_2/Projet_fin_etude/dev/src/src;/Users/joffreyherard/Documents/Master_2/Projet_fin_etude/dev/src/simulations\n")
 	i = 0
 	while i < nbwell:
@@ -277,7 +276,6 @@ def createGraph(lower_bound,upper_bound,filename,max_degree_IN,max_degree_GW,nb_
 	fic.write("user-interface=Cmdenv\n")
 	fic.write("network = lora.simulations.Net\n")
 	fic.write("sim-time-limit=86400s\n")
-	fic.write("repeat = 10\n")
 	fic.write("ned-path=/Users/joffreyherard/Documents/Master_2/Projet_fin_etude/dev/src/src;/Users/joffreyherard/Documents/Master_2/Projet_fin_etude/dev/src/simulations\n")
 	i = 0
 	while i < nbwell:
@@ -319,7 +317,6 @@ def createGraph(lower_bound,upper_bound,filename,max_degree_IN,max_degree_GW,nb_
 	fic.write("user-interface=Cmdenv\n")
 	fic.write("network = lora.simulations.Net\n")
 	fic.write("sim-time-limit=86400s\n")
-	fic.write("repeat = 10\n")
 	fic.write("ned-path=/Users/joffreyherard/Documents/Master_2/Projet_fin_etude/dev/src/src;/Users/joffreyherard/Documents/Master_2/Projet_fin_etude/dev/src/simulations\n")
 	i = 0
 	while i < nbwell:
@@ -351,7 +348,6 @@ def createGraph(lower_bound,upper_bound,filename,max_degree_IN,max_degree_GW,nb_
 	fic.write("user-interface=Cmdenv\n")
 	fic.write("network = lora.simulations.Net\n")
 	fic.write("sim-time-limit=86400s\n")
-	fic.write("repeat = 10\n")
 	fic.write("ned-path=/Users/joffreyherard/Documents/Master_2/Projet_fin_etude/dev/src/src;/Users/joffreyherard/Documents/Master_2/Projet_fin_etude/dev/src/simulations\n")
 	i = 0
 	while i < nbwell:
@@ -394,7 +390,6 @@ def createGraph(lower_bound,upper_bound,filename,max_degree_IN,max_degree_GW,nb_
 	fic.write("user-interface=Cmdenv\n")
 	fic.write("network = lora.simulations.Net\n")
 	fic.write("sim-time-limit=86400s\n")
-	fic.write("repeat = 10\n")
 	fic.write("ned-path=/Users/joffreyherard/Documents/Master_2/Projet_fin_etude/dev/src/src;/Users/joffreyherard/Documents/Master_2/Projet_fin_etude/dev/src/simulations\n")
 	i = 0
 	while i < nbwell:
@@ -426,7 +421,6 @@ def createGraph(lower_bound,upper_bound,filename,max_degree_IN,max_degree_GW,nb_
 	fic.write("user-interface=Cmdenv\n")
 	fic.write("network = lora.simulations.Net\n")
 	fic.write("sim-time-limit=86400s\n")
-	fic.write("repeat = 10\n")
 	fic.write("ned-path=/Users/joffreyherard/Documents/Master_2/Projet_fin_etude/dev/src/src;/Users/joffreyherard/Documents/Master_2/Projet_fin_etude/dev/src/simulations\n")
 	i = 0
 	while i < nbwell:
@@ -479,5 +473,5 @@ if(len(sys.argv) ==6):
 		current_degree_IN=current_degree_IN+1
 	print(str(file_written)+"files written")
 else:
-	print "3 arguments is needed, the right way to use this python script is :\n"
+	print "6 arguments is needed, the right way to use this python script is :\n"
 	print "python grapheGenerator.py <LOWER BOUND> <UPPER BOUND> <MAX IN PER GW> <MAX GW PER WELL> <MAX VERTEX>"
