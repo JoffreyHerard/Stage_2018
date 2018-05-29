@@ -5,6 +5,7 @@ import uos
 import time
 import pycom
 import messageLoRa
+import binascii
 from messageLoRa import messageLoRa
 from machine import Timer
 
@@ -89,11 +90,11 @@ class IN:
 		        pycom.rgbled(0x7f0000) #red
 		        try:
 					print("my slot is :"+str(self.slot))
-		            print("I am sleeping")
-		            time.sleep(self.slot)
-		            del self.clock
-		            self.clock = TimerL(self.listeningTime,2)
-		            isListening=True
+					print("I am sleeping")
+					time.sleep(self.slot)
+					del self.clock
+					self.clock = TimerL(self.listeningTime,2)
+					isListening=True
 		        except OSError as err:
 		            print("OS error: {0}".format(err))
 		        except err:
@@ -199,5 +200,9 @@ class TimerL:
 		global isListening
 		alarm.cancel() # stop it
 		isListening=False
-test=IN(1, 1.0,20)
+
+lora = LoRa(mode=LoRa.LORAWAN, region=LoRa.EU868)
+id = binascii.hexlify(lora.mac()).decode('ascii')
+test=IN(id, 1.0,20)
+del lora
 test.start()

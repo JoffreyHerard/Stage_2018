@@ -28,8 +28,8 @@ class LGW:
 	slot			= 10
 	MyLW			= 0
 	nb_harvest		= 0
-	listeningTime	=10.0
-
+	listeningTime	= 10.0
+	data			= 666
 
 	def __init__(self,app_eui,app_key,dev_eui,id,frequency,slot):
 		# create an OTAA authentication parameters
@@ -134,7 +134,26 @@ class LGW:
 	    else:
 	        print("FREQUENCY ALREADY CHANGED")
 
-
+	def change_AND_send_toLW(self, devEUI_custom, data_custom):
+		#print("FONCTION CHANGE TO LW 1")
+		self.lora = LoRa(mode=LoRa.LORAWAN, region=LoRa.EU868)
+		#print("FONCTION CHANGE TO LW 2 "+str(app_eui)+str(app_key)+str(dev_eui))
+		self.lora.join(activation=LoRa.OTAA, auth=(binascii.unhexlify(devEUI_custom), self.app_eui, self.app_key), timeout=0)
+		#print("FONCTION CHANGE TO LW 3")
+		while not self.lora.has_joined():
+			print('CtLW : Not yet joined... as '+str(devEUI_custom))
+			time.sleep(2.5)
+		print('Connected to Objenious LoRaWAN again ! as '+str(devEUI_custom))
+		self.sock = socket.socket(socket.AF_LORA, socket.SOCK_RAW)
+		self.sock.setsockopt(socket.SOL_LORA, socket.SO_DR, 5)
+		data=data_custom
+		taille=str(len(data))+'s'
+		databytes = struct.pack(taille, data)
+		self.sock.setblocking(True)
+		self.sock.send(databytes)
+		self.sock.setblocking(False)
+		data=""
+		time.sleep(1.5)
 	def changetoLW(self):
 	    #print("FONCTION CHANGE TO LW 1")
 	    self.lora = LoRa(mode=LoRa.LORAWAN, region=LoRa.EU868)
@@ -142,7 +161,7 @@ class LGW:
 	    self.lora.join(activation=LoRa.OTAA, auth=(self.dev_eui, self.app_eui, self.app_key), timeout=0)
 	    #print("FONCTION CHANGE TO LW 3")
 	    while not self.lora.has_joined():
-	        print('CtLW : Not yet joined...')
+	        print('LGW : Not yet joined...')
 	        time.sleep(2.5)
 	    print('Connected to Objenious LoRaWAN again !')
 	    self.sock = socket.socket(socket.AF_LORA, socket.SOCK_RAW)
@@ -152,11 +171,12 @@ class LGW:
 	    print('Radio mode is LoRa now !')
 	    time.sleep(5)
 	def send_datatoLWGW(self,dataString):
-	    data=dataString
-	    taille=str(len(data))+'s'
-	    databytes = struct.pack(taille, data)
-	    self.sock.send(databytes)
-	    data=""
+		data=dataString
+		taille=str(len(data))+'s'
+		databytes = struct.pack(taille, data)
+		self.sock.send(databytes)
+		data=""
+		time.sleep(1.500)
 	def pairing_phase(self,msg):
 	    #print("PAIRING PHASE WITH "+str(msg.id_src)+" STARTED")
 	    self.sock.send('Accept,'+str(2)+','+str(self.frequency)+','+str(self.slot)+','+str(self.id)+','+str(msg.id_src)+','+str(-1)+','+str(self.slot*3))
@@ -205,13 +225,14 @@ class LGW:
 	            msgH.fillMessage(dataHarvested)
 	            print("msg data =========>"+dataHarvested.decode())
 	        data_sum=data_sum+str(idDest)+","+str(msgH.data)+":"
+		data_sum=data_sum[:-1]
 	    print("STANDARD PHASE ENDED")
 	    return data_sum
 	def handle_message(self,data):
 	    msg =messageLoRa()
 	    msg.fillMessage(data)
 	    print(data)
-	    time.sleep(5)
+	    #time.sleep(5)
 	    if msg.kind == "1":
 	        self.pairing_phase(msg)
 	    else:
@@ -239,10 +260,11 @@ class TimerL:
 		alarm.cancel() # stop it
 		isListening=False
 
-#lora = LoRa(mode=LoRa.LORAWAN, region=LoRa.EU868)
+lora = LoRa(mode=LoRa.LORAWAN, region=LoRa.EU868)
 app_eui = '70 B3 D5 7E F0 00 49 E1'.replace(' ','')
 app_key = '30 4C 99 26 3E A5 E6 43 B5 A0 8C B3 25 4A 61 FA'.replace(' ','')
-dev_eui = '70b3d54993dbc83b'#.upper()#binascii.hexlify(lora.mac()).decode('ascii')#.upper()
+dev_eui = binascii.hexlify(lora.mac()).decode('ascii').upper()
+del lora
 #del lora
 #print(app_eui)
 #print(app_key)
