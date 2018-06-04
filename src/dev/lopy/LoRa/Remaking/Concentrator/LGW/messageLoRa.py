@@ -8,7 +8,7 @@ class messageLoRa:
     kind=0
     toto=0
     listeningtime=0
-    
+
     def __init__(self):
         self.messageName="not set yet"
         self.kind=-1

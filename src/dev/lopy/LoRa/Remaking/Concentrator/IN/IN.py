@@ -146,22 +146,23 @@ class IN:
 	        isListening=False
 	def notDiscovered(self):
 	    #print("PHASE NOT DISCOVERED STARTED "+str(tryDiscover))
-	    self.sock.send('Discover,'+str(1)+','+str(self.frequency)+','+str(self.slot)+','+str(self.id)+','+str(-1)+','+str(-1)+','+str(-1))
-	    print("Discover sent by "+str(self.id))
-	    data=self.sock.recv(128)
-	    msg =messageLoRa()
-	    msg.fillMessage(data)
-	    #print("dest ==="+str(msg.get_dest()))
-	    if msg.messageName == "Accept" and msg.id_dest == str(self.id):
-	        self.myLoRa=msg.id_src
-	        self.frequency=msg.frequency
-	        self.change_frequency(msg.frequency)
-	        print("Receive ACCEPT msg")
-	        self.discovered=True
-	    else:
-	        time.sleep(1)
-	    self.tryDiscover+=1
-	    #print("PHASE NOT DISCOVERED ENDED\n")
+		print('Discover,'+str(1)+','+str(self.frequency)+','+str(self.slot)+','+str(self.id)+','+str(-1)+','+str(-1)+','+str(-1))
+		self.sock.send('Discover,'+str(1)+','+str(self.frequency)+','+str(self.slot)+','+str(self.id)+','+str(-1)+','+str(-1)+','+str(-1))
+		print("Discover sent by "+str(self.id))
+		data=self.sock.recv(128)
+		msg =messageLoRa()
+		msg.fillMessage(data)
+		#print("dest ==="+str(msg.get_dest()))
+		if msg.messageName == "Accept" and msg.id_dest == str(self.id):
+			self.myLoRa=msg.id_src
+			self.frequency=msg.frequency
+			self.change_frequency(msg.frequency)
+			print("Receive ACCEPT msg")
+			self.discovered=True
+		else:
+			time.sleep(1)
+			self.tryDiscover+=1
+		#print("PHASE NOT DISCOVERED ENDED\n")
 	def notRegistered(self):
 	    #send some data
 	    #print("PHASE NOT REGISTERED STARTED\n")

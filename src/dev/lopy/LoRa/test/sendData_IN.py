@@ -15,7 +15,7 @@ while(True):
     print("SEND : "+str(data1)+","+str(data2)+","+str(data3))
     s.send(str(data1)+","+str(data2)+","+str(data3))
     print("SLEEP PHASE")
-    time.sleep(5)
+    time.sleep(1)
     data1=data1+1
     data2=data2+1
     data3=data3+1
