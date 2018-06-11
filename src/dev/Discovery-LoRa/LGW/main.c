@@ -20,7 +20,7 @@
 static const char LORAWAN_DEVICE_EUI_STRING[]=                   "3434373170368E0E";
 
 /*LoRaWAN VAR / CALLBACK / etc */
-
+//define USE_BAND_868
 #define LPP_DATATYPE_DIGITAL_INPUT  0x0
 #define LPP_DATATYPE_DIGITAL_OUTPUT 0x1
 #define LPP_DATATYPE_HUMIDITY       0x68
@@ -30,7 +30,7 @@ static const char LORAWAN_DEVICE_EUI_STRING[]=                   "3434373170368E
 /*!
  * Defines the application data transmission duty cycle. 5s, value in [ms].
  */
-#define APP_TX_DUTYCYCLE                             10000
+#define APP_TX_DUTYCYCLE                             5000
 /*!
  * LoRaWAN Adaptive Data Rate
  * @note Please note that when ADR is enabled the end-device should be static
@@ -57,7 +57,7 @@ static const char LORAWAN_DEVICE_EUI_STRING[]=                   "3434373170368E
 /*!
  * User application data buffer size
  */
-#define LORAWAN_APP_DATA_BUFF_SIZE                           64
+#define LORAWAN_APP_DATA_BUFF_SIZE                           128
 /*!
  * User application data
  */
@@ -122,17 +122,9 @@ static void OnTimerLedEvent( void );
 static  LoRaParam_t LoRaParamInit= {LORAWAN_ADR_STATE,
                                     LORAWAN_DEFAULT_DATA_RATE,
                                     LORAWAN_PUBLIC_NETWORK};
-
-
-
 /*LoRa VAR / CALLBACK / etc */
-
-
-
 #define RF_FREQUENCY                                868000000 // Hz
-
 #define TX_OUTPUT_POWER                             14        // dBm
-
 #define LORA_BANDWIDTH                              0         // [0: 125 kHz,
                                                               //  1: 250 kHz,
                                                               //  2: 500 kHz,
@@ -146,8 +138,6 @@ static  LoRaParam_t LoRaParamInit= {LORAWAN_ADR_STATE,
 #define LORA_SYMBOL_TIMEOUT                         5         // Symbols
 #define LORA_FIX_LENGTH_PAYLOAD_ON                  false
 #define LORA_IQ_INVERSION_ON                        false
-
-
 typedef enum
 {
     LOWPOWER,
@@ -157,25 +147,20 @@ typedef enum
     TX,
     TX_TIMEOUT,
 }States_t;
-
-#define RX_TIMEOUT_VALUE                            1000
+#define RX_TIMEOUT_VALUE                            5000
 #define BUFFER_SIZE                                 128 // Define the payload size here
 #define LED_PERIOD_MS               200
-
 #define LEDS_OFF   do{ \
                    LED_Off( LED_BLUE ) ;   \
                    LED_Off( LED_RED ) ;    \
                    LED_Off( LED_GREEN1 ) ; \
                    LED_Off( LED_GREEN2 ) ; \
                    } while(0) ;
-
 uint16_t BufferSize = BUFFER_SIZE;
 uint8_t Buffer[BUFFER_SIZE];
-
 States_t State = LOWPOWER;
 int8_t RssiValue = 0;
 int8_t SnrValue = 0;
-
  /* Led Timers objects*/
 /* Private function prototypes -----------------------------------------------*/
 /*!
@@ -232,7 +217,7 @@ bool proxy 			=false;
 char*  idRegistered[255];
 char*  isRegistered[255];
 char harvest[1023];
-
+bool lora =false;
 /*Custom function */
 
 void pairing_phase( char** msg ); // in dev
@@ -263,11 +248,11 @@ int main( void )
 
 		/*Disbale Stand-by mode*/
 		LPM_SetOffMode(LPM_APPLI_Id , LPM_Disable );
-
+		switchToLoRaWAN();
 		switchToLoRa();
 		while( 1 )
 		{
-			Radio.Rx( RX_TIMEOUT_VALUE );
+			//Radio.Rx( RX_TIMEOUT_VALUE );
 			DISABLE_IRQ( );
 
 			/* if an interrupt has occurred after DISABLE_IRQ, it is kept pending
@@ -278,20 +263,31 @@ int main( void )
 #endif
 
 			ENABLE_IRQ();
-
-			/* USER CODE BEGIN 2 */
-			standard();
-			if(nb_harvest==NbINis){
-				/*On a finit la recolte*/
-				if(!proxy){
-					/*On envoit tout*/
-					PRINTF("Voici la recolte finale : \n\r");
-					PRINTF(harvest);
+			if(lora){
+				DBG_PRINTF("LORA MODE : \n\r");
+				/* USER CODE BEGIN 2 */
+				if(NbINis!=0){
+					standard();
+					if(nb_harvest==NbINis ){
+						/*On a finit la recolte*/
+						if(!proxy){
+							/*On envoit tout*/
+							PRINTF("Voici la recolte finale : \n\r");
+							PRINTF(harvest);
+						}
+						nb_harvest=0;
+						try_IN_current=0;
+						IN_Current=0;
+						memset( harvest, '\0', sizeof(char)*1023 );
+					}
 				}
-				nb_harvest=0;
-				try_IN_current=0;
-				IN_Current=0;
-				memset( harvest, '\0', sizeof(char)*1023 );
+				Radio.Rx( RX_TIMEOUT_VALUE );
+				DelayMs(1);
+			}
+			else{
+				DBG_PRINTF("LORAWAN MODE : \n\r");
+				TimerStop(&TxTimer);
+				sendLoRaWAN("LE DIABLE A ENVOYE UN SMS",strlen("LE DIABLE A ENVOYE UN SMS"));
 			}
 			/* USER CODE END 2 */
 		}
@@ -332,16 +328,17 @@ static void Send( void )
 
   uint32_t i = 0;
   AppData.Port = LORAWAN_APP_PORT;
-  char* str = "Discover,1,1.0,20,2,-1,-1,-1";
+  char* str = "Premier message INIT";
   int length = strlen(str);
   for(i=0;i<length;i++){
 	  AppData.Buff[i]=str[i];
   }
   AppData.BuffSize = i;
 
-  LORA_send( &AppData, LORAWAN_DEFAULT_CONFIRM_MSG_STATE);
 
-  PRINTF("je sors de la fonction send \n\r");
+  LORA_send( &AppData, LORAWAN_CONFIRMED_MSG);
+
+  DBG_PRINTF("je sors de la fonction send \n\r");
   /* USER CODE END 3 */
 }
 
@@ -349,7 +346,7 @@ static void Send( void )
 static void LORA_RxData( lora_AppData_t *AppData )
 {
   /* USER CODE BEGIN 4 */
-  DBG_PRINTF("PACKET RECEIVED ON PORT %d\n\r", AppData->Port);
+  PRINTF("PACKET RECEIVED ON PORT %d\n\r", AppData->Port);
 
   switch (AppData->Port)
   {
@@ -420,6 +417,7 @@ static void LORA_RxData( lora_AppData_t *AppData )
 static void OnTxTimerEvent( void )
 {
   Send( );
+  //sendLoRaWAN("send de type syndical",strlen("send de type syndical"));
   /*Wait for next tx slot*/
   TimerStart( &TxTimer);
 }
@@ -455,6 +453,7 @@ static void LORA_ConfirmClass ( DeviceClass_t Class )
   /*informs the server that switch has occurred ASAP*/
   AppData.BuffSize = 0;
   AppData.Port = LORAWAN_APP_PORT;
+
 
   LORA_send( &AppData, LORAWAN_UNCONFIRMED_MSG);
 }
@@ -564,8 +563,8 @@ void OnRxDone( uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr )
     }
 
     PRINTF("\n\r");
-    DBG_PRINTF("LoRa: OnRxDone\n\r");
-    DBG_PRINTF("LoRa: RssiValue=%d dBm, SnrValue=%d\n\r", rssi, snr);
+    PRINTF("LoRa: OnRxDone\n\r");
+    PRINTF("LoRa: RssiValue=%d dBm, SnrValue=%d\n\r", rssi, snr);
 }
 
 void OnTxTimeout( void )
@@ -580,7 +579,7 @@ void OnRxTimeout( void )
 {
     Radio.Sleep( );
     State = RX_TIMEOUT;
-    DBG_PRINTF("LoRa: OnRxTimeout\n\r");
+    PRINTF("LoRa: OnRxTimeout\n\r");
 }
 
 void OnRxError( void )
@@ -599,6 +598,7 @@ void OnRxError( void )
 
 /* BEGIN PERSONNAL  FUNCTION  */
 void switchToLoRa( void ){
+		lora=true;
 	    LORA_Init( NULL, NULL);
 	    TimerStop( &TxTimer);
 	  	// Radio initialization
@@ -633,7 +633,7 @@ void sendLoRa(char* data, int length){
 	Radio.Send(Buffer,length);
 }
 void switchToLoRaWAN( void ){
-
+		lora=false;
 		/* Configure the Lora Stack*/
 		LORA_Init( &LoRaMainCallbacks, &LoRaParamInit);
 
@@ -647,27 +647,15 @@ void switchToLoRaWAN( void ){
 		  LORA_Join();
 		}
 
-		PRINTF("On est en LoRaWAn ");
+		PRINTF("On est en LoRaWAn \n\r");
 		DelayMs( 5 );
 }
-// A CORRIGER MARCHE PAS???????????
 void sendLoRaWAN(char* data, int length){
-
-	  if ( LORA_JoinStatus () != LORA_SET)
-	  {
-	    /*Not joined, try again later*/
-	    LORA_Join();
-	    return;
-	  }
-	  /*PRINTF("ENVOI DE DATA EN LORAWAN -> ");
-	  PRINTF(data);
-	  PRINTF("\n\r");*/
-	  uint32_t i = 0;
 	  int iter;
 	  for(iter=0;iter<length;iter++){
-		  AppData.Buff[iter+1]=data[iter];
+		  AppData.Buff[iter]=data[iter];
 	  }
-	  AppData.BuffSize = i;
+	  AppData.BuffSize = iter;
 	  AppData.Port = LORAWAN_APP_PORT;
 	  LORA_send( &AppData, LORAWAN_CONFIRMED_MSG);
 }
@@ -748,7 +736,7 @@ void pairing_phase(char** msg ){
 	strcat(messageAnswer,",");
 	strcat(messageAnswer,data);
 	strcat(messageAnswer,listening);
-	PRINTF(messageAnswer);
+	//PRINTF(messageAnswer);
 	sendLoRa(messageAnswer, strlen(messageAnswer));
 	memset( messageAnswer, '\0', sizeof(char)*512 );
 	int j = NOT_FOUND;
@@ -761,7 +749,7 @@ void pairing_phase(char** msg ){
 		}
 	}
 	if (j != NOT_FOUND)
-		PRINTF("Added Before ! \n\r");
+		PRINTF("\n\r Added Before ! \n\r");
 	else{
 		idRegistered[NbINid]=msg[ID_SRC_MSG_LORA];
 		NbINid++;
@@ -796,7 +784,7 @@ void registering_phase(char** msg ){
 	strcat(messageAnswer,",");
 	strcat(messageAnswer,data);
 	strcat(messageAnswer,listening);
-	PRINTF(messageAnswer);
+	//PRINTF(messageAnswer);
 	sendLoRa(messageAnswer, strlen(messageAnswer));
 	memset( messageAnswer, '\0', sizeof(char)*512 );
 	int j = NOT_FOUND;
@@ -844,7 +832,7 @@ void standard( void ){
 	strcat(messageAnswer,",");
 	strcat(messageAnswer,data);
 	strcat(messageAnswer,listening);
-	PRINTF(messageAnswer);
+	//PRINTF(messageAnswer);
 	sendLoRa(messageAnswer, strlen(messageAnswer));
 	memset( messageAnswer, '\0', sizeof(char)*512 );
 	try_IN_current++;

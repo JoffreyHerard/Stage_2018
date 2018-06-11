@@ -30,7 +30,7 @@ class IN:
 	listeningTime=10.0
 	def __init__(self,id,frequency,slot):
 		# create an OTAA authentication parameters
-		self.lora = LoRa(mode=LoRa.LORA, region=LoRa.EU868)
+		self.lora = LoRa(mode=LoRa.LORA,sf=12, region=LoRa.EU868)
 		self.sock = socket.socket(socket.AF_LORA, socket.SOCK_RAW)
 		self.sock.setblocking(False)
 		self.id=id

@@ -104,6 +104,7 @@
 #define LORAWAN_DEVICE_EUI                          { 0x34, 0x34, 0x37, 0x31, 0x70, 0x36, 0x8E, 0x0E }
 
 
+
 /*!
  * Application IEEE EUI (big endian)
  */
