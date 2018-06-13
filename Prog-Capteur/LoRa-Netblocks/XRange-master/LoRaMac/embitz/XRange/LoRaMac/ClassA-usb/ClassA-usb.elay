@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<EmBitz_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="..\..\..\..\src\apps\LoRaMac\classA-usb\XRange\cli.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="275" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\..\src\apps\LoRaMac\classA-usb\XRange\Commissioning.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="58" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\..\src\apps\LoRaMac\classA-usb\XRange\eeprom_conf.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1447" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\..\src\apps\LoRaMac\classA-usb\XRange\main.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8297" topLine="335" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\..\src\apps\LoRaMac\classA-usb\XRange\utils.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="247" topLine="45" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\..\src\boards\mcu\stm32\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_gpio.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9234" topLine="211" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\..\src\mac\LoRaMac.c" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="140287" topLine="4349" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\..\src\radio\sx1272\sx1272.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="571" topLine="0" />
+		</Cursor>
+	</File>
+</EmBitz_layout_file>

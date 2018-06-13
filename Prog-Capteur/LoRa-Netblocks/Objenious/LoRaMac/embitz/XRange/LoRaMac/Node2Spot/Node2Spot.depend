@@ -1,0 +1,1025 @@
+# depslib dependency file v1.0
+1522339835 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\apps\loramac\classa\xrange\main.c
+	<string.h>
+	<math.h>
+	"board.h"
+	"LoRaMac.h"
+	"Commissioning.h"
+	"LoRaMacTest.h"
+	"uart-usb-board.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\xrange\board.h
+	<stdbool.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<stdint.h>
+	"stm32l1xx.h"
+	"stm32l1xx_hal.h"
+	"utilities.h"
+	"timer.h"
+	"delay.h"
+	"gpio.h"
+	"adc.h"
+	"spi.h"
+	"i2c.h"
+	"uart.h"
+	"radio.h"
+	"sx1272/sx1272.h"
+	"rtc-board.h"
+	"sx1272-board.h"
+	"uart-board.h"
+	"uart-usb-board.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\xrange\cmsis\stm32l1xx.h
+	"stm32l100xb.h"
+	"stm32l100xba.h"
+	"stm32l100xc.h"
+	"stm32l151xb.h"
+	"stm32l151xba.h"
+	"stm32l151xc.h"
+	"stm32l151xca.h"
+	"stm32l151xd.h"
+	"stm32l151xdx.h"
+	"stm32l151xe.h"
+	"stm32l152xb.h"
+	"stm32l152xba.h"
+	"stm32l152xc.h"
+	"stm32l152xca.h"
+	"stm32l152xd.h"
+	"stm32l152xdx.h"
+	"stm32l152xe.h"
+	"stm32l162xc.h"
+	"stm32l162xca.h"
+	"stm32l162xd.h"
+	"stm32l162xdx.h"
+	"stm32l162xe.h"
+	"stm32l1xx_hal.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\xrange\cmsis\stm32l151xc.h
+	"core_cm3.h"
+	"system_stm32l1xx.h"
+	<stdint.h>
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\cmsis\core_cm3.h
+	<stdint.h>
+	"core_cmInstr.h"
+	"core_cmFunc.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\cmsis\core_cminstr.h
+	"cmsis_armcc.h"
+	"cmsis_armcc_V6.h"
+	"cmsis_gcc.h"
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\cmsis\cmsis_armcc.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\cmsis\cmsis_armcc_v6.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\cmsis\cmsis_gcc.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\cmsis\core_cmfunc.h
+	"cmsis_armcc.h"
+	"cmsis_armcc_V6.h"
+	"cmsis_gcc.h"
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\xrange\cmsis\system_stm32l1xx.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal.h
+	"stm32l1xx_hal_conf.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\xrange\cmsis\stm32l1xx_hal_conf.h
+	"mxconstants.h"
+	"stm32l1xx_hal_rcc.h"
+	"stm32l1xx_hal_gpio.h"
+	"stm32l1xx_hal_dma.h"
+	"stm32l1xx_hal_cortex.h"
+	"stm32l1xx_hal_adc.h"
+	"stm32l1xx_hal_comp.h"
+	"stm32l1xx_hal_crc.h"
+	"stm32l1xx_hal_cryp.h"
+	"stm32l1xx_hal_dac.h"
+	"stm32l1xx_hal_flash.h"
+	"stm32l1xx_hal_sram.h"
+	"stm32l1xx_hal_nor.h"
+	"stm32l1xx_hal_i2c.h"
+	"stm32l1xx_hal_i2s.h"
+	"stm32l1xx_hal_iwdg.h"
+	"stm32l1xx_hal_lcd.h"
+	"stm32l1xx_hal_opamp.h"
+	"stm32l1xx_hal_pwr.h"
+	"stm32l1xx_hal_rtc.h"
+	"stm32l1xx_hal_sd.h"
+	"stm32l1xx_hal_spi.h"
+	"stm32l1xx_hal_tim.h"
+	"stm32l1xx_hal_uart.h"
+	"stm32l1xx_hal_usart.h"
+	"stm32l1xx_hal_irda.h"
+	"stm32l1xx_hal_smartcard.h"
+	"stm32l1xx_hal_wwdg.h"
+	"stm32l1xx_hal_pcd.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\xrange\cmsis\mxconstants.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_rcc.h
+	"stm32l1xx_hal_def.h"
+	"stm32l1xx_hal_rcc_ex.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_def.h
+	"stm32l1xx.h"
+	"Legacy/stm32_hal_legacy.h"
+	<stdio.h>
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\legacy\stm32_hal_legacy.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_rcc_ex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_gpio.h
+	"stm32l1xx_hal_def.h"
+	"stm32l1xx_hal_gpio_ex.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_gpio_ex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_dma.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_cortex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_adc.h
+	"stm32l1xx_hal_def.h"
+	"stm32l1xx_hal_adc_ex.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_adc_ex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_comp.h
+	"stm32l1xx_hal_def.h"
+	"stm32l1xx_hal_comp_ex.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_comp_ex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_crc.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_cryp.h
+	"stm32l1xx_hal_def.h"
+	"stm32l1xx_hal_cryp_ex.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_cryp_ex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_dac.h
+	"stm32l1xx_hal_def.h"
+	"stm32l1xx_hal_dac_ex.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_dac_ex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_flash.h
+	"stm32l1xx_hal_def.h"
+	"stm32l1xx_hal_flash_ex.h"
+	"stm32l1xx_hal_flash_ramfunc.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_flash_ex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_flash_ramfunc.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_sram.h
+	"stm32l1xx_ll_fsmc.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_ll_fsmc.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_nor.h
+	"stm32l1xx_ll_fsmc.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_i2c.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_i2s.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_iwdg.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_lcd.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_opamp.h
+	"stm32l1xx_hal_def.h"
+	"stm32l1xx_hal_opamp_ex.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_opamp_ex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_pwr.h
+	"stm32l1xx_hal_def.h"
+	"stm32l1xx_hal_pwr_ex.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_pwr_ex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_rtc.h
+	"stm32l1xx_hal_def.h"
+	"stm32l1xx_hal_rtc_ex.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_rtc_ex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_sd.h
+	"stm32l1xx_ll_sdmmc.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_ll_sdmmc.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_spi.h
+	"stm32l1xx_hal_def.h"
+	"stm32l1xx_hal_spi_ex.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_spi_ex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_tim.h
+	"stm32l1xx_hal_def.h"
+	"stm32l1xx_hal_tim_ex.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_tim_ex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_uart.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_usart.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_irda.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_smartcard.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_wwdg.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_pcd.h
+	"stm32l1xx_hal_def.h"
+	"stm32l1xx_hal_pcd_ex.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_pcd_ex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\utilities.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\system\timer.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\system\delay.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\system\gpio.h
+	"pinName-board.h"
+	"pinName-ioe.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\xrange\pinname-board.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\xrange\pinname-ioe.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\system\adc.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\system\spi.h
+	"spi-board.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\xrange\spi-board.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\system\i2c.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\system\uart.h
+	"fifo.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\system\fifo.h
+	<stdbool.h>
+	<stdint.h>
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\radio\radio.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\radio\sx1272\sx1272.h
+	"sx1272Regs-Fsk.h"
+	"sx1272Regs-LoRa.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\radio\sx1272\sx1272regs-fsk.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\radio\sx1272\sx1272regs-lora.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\xrange\rtc-board.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\xrange\sx1272-board.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\xrange\uart-board.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\xrange\uart-usb-board.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\mac\loramac.h
+	"LoRaMac-definitions.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\mac\loramac-definitions.h
+
+1522342043 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\apps\loramac\classa\xrange\commissioning.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\mac\loramactest.h
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_adc.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_adc_ex.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_cortex.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_dma.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_gpio.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_i2c.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_pwr.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_pwr_ex.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_rcc.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_rcc_ex.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_rtc.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_rtc_ex.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_spi.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_spi_ex.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_uart.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\sysirqhandlers.c
+	"board.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\mcu\stm32\utilities.c
+	<stdlib.h>
+	<stdio.h>
+	"board.h"
+	"utilities.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\xrange\adc-board.c
+	"board.h"
+	"adc-board.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\xrange\adc-board.h
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\xrange\board.c
+	"board.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\xrange\cmsis\arm-gcc\startup_stm32l151xc.s
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\xrange\cmsis\system_stm32l1xx.c
+	"stm32l1xx.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\xrange\gpio-board.c
+	"board.h"
+	"gpio-board.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\xrange\gpio-board.h
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\xrange\i2c-board.c
+	"board.h"
+	"i2c-board.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\xrange\i2c-board.h
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\xrange\rtc-board.c
+	<math.h>
+	"board.h"
+	"rtc-board.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\xrange\spi-board.c
+	"board.h"
+	"spi-board.h"
+	"stm32l1xx_hal_spi.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\xrange\sx1272-board.c
+	"board.h"
+	"radio.h"
+	"sx1272/sx1272.h"
+	"sx1272-board.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\boards\xrange\uart-board.c
+	"board.h"
+	"uart-board.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\mac\loramac.c
+	<math.h>
+	"board.h"
+	"LoRaMacCrypto.h"
+	"LoRaMac.h"
+	"LoRaMacTest.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\mac\loramaccrypto.h
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\mac\loramaccrypto.c
+	<stdlib.h>
+	<stdint.h>
+	"utilities.h"
+	"aes.h"
+	"cmac.h"
+	"LoRaMacCrypto.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\system\crypto\aes.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\system\crypto\cmac.h
+	"aes.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\radio\sx1272\sx1272.c
+	<math.h>
+	<string.h>
+	"board.h"
+	"radio.h"
+	"sx1272.h"
+	"sx1272-board.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\system\adc.c
+	"board.h"
+	"adc-board.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\system\crypto\aes.c
+	<string.h>
+	<intrin.h>
+	<stdlib.h>
+	<stdint.h>
+	"aes.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\system\crypto\cmac.c
+	<stdint.h>
+	"aes.h"
+	"cmac.h"
+	"utilities.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\system\delay.c
+	"board.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\system\fifo.c
+	"fifo.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\system\gpio.c
+	"board.h"
+	"gpio-board.h"
+	"gpio-ioe.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\system\i2c.c
+	"board.h"
+	"i2c-board.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\system\timer.c
+	"board.h"
+	"rtc-board.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\nouveau-xrange\xrange-master\loramac\src\system\uart.c
+	"board.h"
+	"uart-board.h"
+	"uart-usb-board.h"
+	"uart.h"
+
+1522343310 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\apps\loramac\node2spot\xrange\main.c
+	<string.h>
+	<math.h>
+	"board.h"
+	"LoRaMac.h"
+	"Commissioning.h"
+	"LoRaMacTest.h"
+	"uart-usb-board.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\xrange\board.h
+	<stdbool.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<stdint.h>
+	"stm32l1xx.h"
+	"stm32l1xx_hal.h"
+	"utilities.h"
+	"timer.h"
+	"delay.h"
+	"gpio.h"
+	"adc.h"
+	"spi.h"
+	"i2c.h"
+	"uart.h"
+	"radio.h"
+	"sx1272/sx1272.h"
+	"rtc-board.h"
+	"sx1272-board.h"
+	"uart-board.h"
+	"uart-usb-board.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\xrange\cmsis\stm32l1xx.h
+	"stm32l100xb.h"
+	"stm32l100xba.h"
+	"stm32l100xc.h"
+	"stm32l151xb.h"
+	"stm32l151xba.h"
+	"stm32l151xc.h"
+	"stm32l151xca.h"
+	"stm32l151xd.h"
+	"stm32l151xdx.h"
+	"stm32l151xe.h"
+	"stm32l152xb.h"
+	"stm32l152xba.h"
+	"stm32l152xc.h"
+	"stm32l152xca.h"
+	"stm32l152xd.h"
+	"stm32l152xdx.h"
+	"stm32l152xe.h"
+	"stm32l162xc.h"
+	"stm32l162xca.h"
+	"stm32l162xd.h"
+	"stm32l162xdx.h"
+	"stm32l162xe.h"
+	"stm32l1xx_hal.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\xrange\cmsis\stm32l151xc.h
+	"core_cm3.h"
+	"system_stm32l1xx.h"
+	<stdint.h>
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\cmsis\core_cm3.h
+	<stdint.h>
+	"core_cmInstr.h"
+	"core_cmFunc.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\cmsis\core_cminstr.h
+	"cmsis_armcc.h"
+	"cmsis_armcc_V6.h"
+	"cmsis_gcc.h"
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\cmsis\cmsis_armcc.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\cmsis\cmsis_armcc_v6.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\cmsis\cmsis_gcc.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\cmsis\core_cmfunc.h
+	"cmsis_armcc.h"
+	"cmsis_armcc_V6.h"
+	"cmsis_gcc.h"
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\xrange\cmsis\system_stm32l1xx.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal.h
+	"stm32l1xx_hal_conf.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\xrange\cmsis\stm32l1xx_hal_conf.h
+	"mxconstants.h"
+	"stm32l1xx_hal_rcc.h"
+	"stm32l1xx_hal_gpio.h"
+	"stm32l1xx_hal_dma.h"
+	"stm32l1xx_hal_cortex.h"
+	"stm32l1xx_hal_adc.h"
+	"stm32l1xx_hal_comp.h"
+	"stm32l1xx_hal_crc.h"
+	"stm32l1xx_hal_cryp.h"
+	"stm32l1xx_hal_dac.h"
+	"stm32l1xx_hal_flash.h"
+	"stm32l1xx_hal_sram.h"
+	"stm32l1xx_hal_nor.h"
+	"stm32l1xx_hal_i2c.h"
+	"stm32l1xx_hal_i2s.h"
+	"stm32l1xx_hal_iwdg.h"
+	"stm32l1xx_hal_lcd.h"
+	"stm32l1xx_hal_opamp.h"
+	"stm32l1xx_hal_pwr.h"
+	"stm32l1xx_hal_rtc.h"
+	"stm32l1xx_hal_sd.h"
+	"stm32l1xx_hal_spi.h"
+	"stm32l1xx_hal_tim.h"
+	"stm32l1xx_hal_uart.h"
+	"stm32l1xx_hal_usart.h"
+	"stm32l1xx_hal_irda.h"
+	"stm32l1xx_hal_smartcard.h"
+	"stm32l1xx_hal_wwdg.h"
+	"stm32l1xx_hal_pcd.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\xrange\cmsis\mxconstants.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_rcc.h
+	"stm32l1xx_hal_def.h"
+	"stm32l1xx_hal_rcc_ex.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_def.h
+	"stm32l1xx.h"
+	"Legacy/stm32_hal_legacy.h"
+	<stdio.h>
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\legacy\stm32_hal_legacy.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_rcc_ex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_gpio.h
+	"stm32l1xx_hal_def.h"
+	"stm32l1xx_hal_gpio_ex.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_gpio_ex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_dma.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_cortex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_adc.h
+	"stm32l1xx_hal_def.h"
+	"stm32l1xx_hal_adc_ex.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_adc_ex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_comp.h
+	"stm32l1xx_hal_def.h"
+	"stm32l1xx_hal_comp_ex.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_comp_ex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_crc.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_cryp.h
+	"stm32l1xx_hal_def.h"
+	"stm32l1xx_hal_cryp_ex.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_cryp_ex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_dac.h
+	"stm32l1xx_hal_def.h"
+	"stm32l1xx_hal_dac_ex.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_dac_ex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_flash.h
+	"stm32l1xx_hal_def.h"
+	"stm32l1xx_hal_flash_ex.h"
+	"stm32l1xx_hal_flash_ramfunc.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_flash_ex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_flash_ramfunc.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_sram.h
+	"stm32l1xx_ll_fsmc.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_ll_fsmc.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_nor.h
+	"stm32l1xx_ll_fsmc.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_i2c.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_i2s.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_iwdg.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_lcd.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_opamp.h
+	"stm32l1xx_hal_def.h"
+	"stm32l1xx_hal_opamp_ex.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_opamp_ex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_pwr.h
+	"stm32l1xx_hal_def.h"
+	"stm32l1xx_hal_pwr_ex.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_pwr_ex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_rtc.h
+	"stm32l1xx_hal_def.h"
+	"stm32l1xx_hal_rtc_ex.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_rtc_ex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_sd.h
+	"stm32l1xx_ll_sdmmc.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_ll_sdmmc.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_spi.h
+	"stm32l1xx_hal_def.h"
+	"stm32l1xx_hal_spi_ex.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_spi_ex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_tim.h
+	"stm32l1xx_hal_def.h"
+	"stm32l1xx_hal_tim_ex.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_tim_ex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_uart.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_usart.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_irda.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_smartcard.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_wwdg.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_pcd.h
+	"stm32l1xx_hal_def.h"
+	"stm32l1xx_hal_pcd_ex.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\inc\stm32l1xx_hal_pcd_ex.h
+	"stm32l1xx_hal_def.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\utilities.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\system\timer.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\system\delay.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\system\gpio.h
+	"pinName-board.h"
+	"pinName-ioe.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\xrange\pinname-board.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\xrange\pinname-ioe.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\system\adc.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\system\spi.h
+	"spi-board.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\xrange\spi-board.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\system\i2c.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\system\uart.h
+	"fifo.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\system\fifo.h
+	<stdbool.h>
+	<stdint.h>
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\radio\radio.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\radio\sx1272\sx1272.h
+	"sx1272Regs-Fsk.h"
+	"sx1272Regs-LoRa.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\radio\sx1272\sx1272regs-fsk.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\radio\sx1272\sx1272regs-lora.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\xrange\rtc-board.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\xrange\sx1272-board.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\xrange\uart-board.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\xrange\uart-usb-board.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\mac\loramac.h
+	"LoRaMac-definitions.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\mac\loramac-definitions.h
+
+1522342043 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\apps\loramac\node2spot\xrange\commissioning.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\mac\loramactest.h
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_adc.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_adc_ex.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_cortex.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_dma.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_gpio.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_i2c.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_pwr.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_pwr_ex.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_rcc.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_rcc_ex.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_rtc.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_rtc_ex.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_spi.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_spi_ex.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\stm32l1xx_hal_driver\src\stm32l1xx_hal_uart.c
+	"stm32l1xx_hal.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\sysirqhandlers.c
+	"board.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\mcu\stm32\utilities.c
+	<stdlib.h>
+	<stdio.h>
+	"board.h"
+	"utilities.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\xrange\adc-board.c
+	"board.h"
+	"adc-board.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\xrange\adc-board.h
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\xrange\board.c
+	"board.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\xrange\cmsis\arm-gcc\startup_stm32l151xc.s
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\xrange\cmsis\system_stm32l1xx.c
+	"stm32l1xx.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\xrange\gpio-board.c
+	"board.h"
+	"gpio-board.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\xrange\gpio-board.h
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\xrange\i2c-board.c
+	"board.h"
+	"i2c-board.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\xrange\i2c-board.h
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\xrange\rtc-board.c
+	<math.h>
+	"board.h"
+	"rtc-board.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\xrange\spi-board.c
+	"board.h"
+	"spi-board.h"
+	"stm32l1xx_hal_spi.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\xrange\sx1272-board.c
+	"board.h"
+	"radio.h"
+	"sx1272/sx1272.h"
+	"sx1272-board.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\boards\xrange\uart-board.c
+	"board.h"
+	"uart-board.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\mac\loramac.c
+	<math.h>
+	"board.h"
+	"LoRaMacCrypto.h"
+	"LoRaMac.h"
+	"LoRaMacTest.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\mac\loramaccrypto.h
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\mac\loramaccrypto.c
+	<stdlib.h>
+	<stdint.h>
+	"utilities.h"
+	"aes.h"
+	"cmac.h"
+	"LoRaMacCrypto.h"
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\system\crypto\aes.h
+
+1493645651 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\system\crypto\cmac.h
+	"aes.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\radio\sx1272\sx1272.c
+	<math.h>
+	<string.h>
+	"board.h"
+	"radio.h"
+	"sx1272.h"
+	"sx1272-board.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\system\adc.c
+	"board.h"
+	"adc-board.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\system\crypto\aes.c
+	<string.h>
+	<intrin.h>
+	<stdlib.h>
+	<stdint.h>
+	"aes.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\system\crypto\cmac.c
+	<stdint.h>
+	"aes.h"
+	"cmac.h"
+	"utilities.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\system\delay.c
+	"board.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\system\fifo.c
+	"fifo.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\system\gpio.c
+	"board.h"
+	"gpio-board.h"
+	"gpio-ioe.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\system\i2c.c
+	"board.h"
+	"i2c-board.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\system\timer.c
+	"board.h"
+	"rtc-board.h"
+
+1493645651 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\objenious\loramac\src\system\uart.c
+	"board.h"
+	"uart-board.h"
+	"uart-usb-board.h"
+	"uart.h"
+

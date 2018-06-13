@@ -2,6 +2,7 @@
 
 %====================== PACKAGES ======================
 
+\usepackage[svgnames]{xcolor}
 \usepackage[french]{babel}
 %pour gérer les positionnement d'images
 \usepackage{float}
@@ -42,7 +43,7 @@
 
 \pagestyle{fancy}
 \renewcommand\headrulewidth{1pt}
-\fancyhead[L]{Titre}
+\fancyhead[L]{Gestion des noeuds isolés en LoRa}
 \fancyhead[R]{URCA}
 \renewcommand\footrulewidth{1pt}
 \fancyfoot[L]{HERARD Joffrey}
@@ -58,7 +59,7 @@
 \hypersetup{							% Information sur le document
 pdfauthor = {HERARD JOFFREY}			% Auteurs
 pdftitle = {Stage -
-			TITRE},			% Titre du document
+			Gestion des noeuds isolés en LoRa},			% Titre du document
 pdfsubject = {Rapport de Stage},		% Sujet
 pdfkeywords = {Tag1, Tag2, Tag3, ...},	% Mots-clefs
 pdfstartview={FitH}}					% ajuste la page à la largueur de l'écran
@@ -73,13 +74,14 @@ pdfstartview={FitH}}					% ajuste la page à la largueur de l'écran
 %%
 %======================== DEBUT DU DOCUMENT ========================
 
+\usepackage{minted}
 \begin{document}
 
 %régler l'espacement entre les lignes
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
 %page de garde
-\input{./title.tex}
+\input{./title.tex}% ok correction ? 
 
 %page blanche
 \newpage
@@ -88,7 +90,7 @@ pdfstartview={FitH}}					% ajuste la page à la largueur de l'écran
 \thispagestyle{empty}
 \newpage
 
-\input{./abstract.tex}
+\input{./abstract.tex}% ok correction ? 
 
 \tableofcontents
 \thispagestyle{empty}
@@ -102,23 +104,17 @@ pdfstartview={FitH}}					% ajuste la page à la largueur de l'écran
 
 %====================== INCLUSION DES PARTIES ======================
 
-~
 \thispagestyle{empty}
 %recommencer la numérotation des pages à "1"
 \setcounter{page}{0}
 \newpage
 
 	   
-\input{./presentation.tex}
-
-\input{./existant.tex}
- 
-\input{./besoins.tex}
-
-\input{./autre_partie.tex}
-\input{./resultats.tex}
-\input{./regret.tex}
-%\input{./hypervO.tex}
+\input{./presentation.tex} % ok correction ? 
+\input{./solutions.tex} % ok correction ? 
+\input{./simulations.tex}% ok correction ? 
+\input{./programmation.tex}
+\input{./problemes.tex}
 \input{./bilan.tex}
 
 \newpage

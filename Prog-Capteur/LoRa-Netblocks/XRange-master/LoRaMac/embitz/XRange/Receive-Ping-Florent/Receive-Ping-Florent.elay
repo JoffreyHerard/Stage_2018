@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<EmBitz_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="..\..\..\src\apps\Receive-Ping-Florent\XRange\main.c" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9458" topLine="129" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\src\boards\mcu\stm32\STM32_USB_Device_Library\Class\CDC\Src\usbd_cdc.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="26595" topLine="833" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\src\boards\mcu\stm32\STM32L1xx_HAL_Driver\Inc\stm32l1xx_hal_def.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7711" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\src\boards\mcu\stm32\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="11373" topLine="283" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\src\boards\mcu\stm32\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_gpio.c" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="20334" topLine="490" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\src\boards\mcu\stm32\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_pcd.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="16584" topLine="538" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\src\boards\mcu\stm32\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_spi.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="54151" topLine="1753" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\src\boards\XRange\board.c" open="0" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4729" topLine="176" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\src\boards\XRange\cmsis\arm-gcc\startup_stm32l151xc.s" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4603" topLine="83" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\src\boards\XRange\gpio-board.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4925" topLine="216" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\src\boards\XRange\rtc-board.c" open="0" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9594" topLine="298" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\src\boards\XRange\rtc-board.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="690" topLine="43" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\src\boards\XRange\spi-board.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2756" topLine="88" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\src\boards\XRange\sx1272-board.c" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3187" topLine="92" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\src\boards\XRange\uart-usb-board.c" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1975" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\src\boards\XRange\usb\cdc\src\usbd_cdc_if.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9728" topLine="302" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\src\boards\XRange\usb\cdc\src\usbd_desc.c" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2566" topLine="46" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\src\radio\radio.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2158" topLine="77" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\src\radio\sx1272\sx1272.c" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="47799" topLine="1356" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\src\system\gpio.c" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="793" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\src\system\timer.c" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9689" topLine="354" />
+		</Cursor>
+	</File>
+</EmBitz_layout_file>

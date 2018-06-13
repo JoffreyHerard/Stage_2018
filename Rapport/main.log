@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.11)  14 APR 2018 12:41
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.11)  12 JUN 2018 20:59
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -24,6 +24,36 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+(/usr/local/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+
+(/usr/local/texlive/2016/texmf-dist/tex/xelatex/xetex-def/xetex.def
+File: xetex.def 2016/04/06 v4.08 LaTeX color/graphics driver for XeTeX (TeX Liv
+e/RRM/JK)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+))
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/xcolor/svgnam.def
+File: svgnam.def 2016/05/11 v2.12 Predefined colors according to SVG 1.1 (UK)
+))
 (/usr/local/texlive/2016/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2016/04/23 3.9r The Babel package
 
@@ -89,17 +119,7 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 96.
-
-(/usr/local/texlive/2016/texmf-dist/tex/xelatex/xetex-def/xetex.def
-File: xetex.def 2016/04/06 v4.08 LaTeX color/graphics driver for XeTeX (TeX Liv
-e/RRM/JK)
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
 \Gin@req@height=\dimen106
 \Gin@req@width=\dimen107
 )
@@ -121,22 +141,6 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@depth=\count94
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: xetex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
@@ -1143,39 +1147,140 @@ File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 \c@post=\count199
 \c@mydef=\count266
 
-(./main.aux)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/minted/minted.sty
+Package: minted 2015/09/09 v2.1 Yet another Pygments shim for LaTeX
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)
+\FV@CodeLineNo=\count267
+\FV@InFile=\read3
+\FV@TabBox=\box58
+\c@FancyVerbLine=\count268
+\FV@StepNumber=\count269
+\FV@OutFile=\write4
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2010/10/22 v0.4 Testing for the operating system
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/catchfile.sty
+Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)
+)
+runsystem(uname -s > "main.w18")...executed.
+
+
+(./main.w18)
+runsystem(rm -- "main.w18")...executed.
+
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count270
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/local/texlive/2016/texmf-dist/tex/generic/xstring/xstring.tex
+\@xs@message=\write5
+\integerpart=\count271
+\decimalpart=\count272
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+Invalid UTF-8 byte or sequence at line 296 replaced by U+FFFD.
+\linenopenalty=\count273
+\output=\toks53
+\linenoprevgraf=\count274
+\linenumbersep=\dimen293
+\linenumberwidth=\dimen294
+\c@linenumber=\count275
+\c@pagewiselinenumber=\count276
+\c@LN@truepage=\count277
+\c@internallinenumber=\count278
+\c@internallinenumbers=\count279
+\quotelinenumbersep=\dimen295
+\bframerule=\dimen296
+\bframesep=\dimen297
+\bframebox=\box59
+LaTeX Info: Redefining \\ on input line 3056.
+)
+\minted@appexistsfile=\read4
+\FV@BreakIndent=\dimen298
+\FV@BreakSymbolSepLeft=\dimen299
+\FV@BreakSymbolSepRight=\dimen300
+\FV@BreakSymbolIndentLeft=\dimen301
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 688
+.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/euenc/eu1lmtt.fd
+File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+\FV@BreakSymbolIndentRight=\dimen302
+\c@FancyVerbLineBreakLast=\count280
+\FV@LineBox=\box60
+\FV@LineIndentBox=\box61
+\minted@bgbox=\box62
+\minted@code=\write6
+\c@minted@FancyVerbLineTemp=\count281
+\@float@every@listing=\toks54
+\c@listing=\count282
+)
+runsystem(mkdir -p "_minted-main")...executed.
+
+
+(./_minted-main/default.pygstyle)
+runsystem(which "pygmentize" && touch "main.aex")...executed.
+
+runsystem(rm "main.aex")...executed.
+
+ (./main.aux
+
+LaTeX Warning: Label `A' multiply defined.
+
+
+LaTeX Warning: Label `A' multiply defined.
+
+
+LaTeX Warning: Label `A' multiply defined.
+
+
+LaTeX Warning: Label `A' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 76.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 76.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 78.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 78.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Info: Redefining \dots on input line 76.
-LaTeX Info: Redefining \up on input line 76.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Info: Redefining \dots on input line 78.
+LaTeX Info: Redefining \up on input line 78.
 
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box58
-Package hyperref Info: Link coloring OFF on input line 76.
+\AtBeginShipoutBox=\box63
+Package hyperref Info: Link coloring OFF on input line 78.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1183,15 +1288,15 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count267
+\c@section@level=\count283
 )
-LaTeX Info: Redefining \ref on input line 76.
-LaTeX Info: Redefining \pageref on input line 76.
-LaTeX Info: Redefining \nameref on input line 76.
+LaTeX Info: Redefining \ref on input line 78.
+LaTeX Info: Redefining \pageref on input line 78.
+LaTeX Info: Redefining \nameref on input line 78.
 
 (./main.out) (./main.out)
-\@outlinefile=\write4
-\openout4 = `main.out'.
+\@outlinefile=\write7
+\openout7 = `main.out'.
 
 
 *geometry* driver: auto-detecting
@@ -1238,60 +1343,60 @@ Package caption Info: End \AtBeginDocument code.
 .................................................
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 76.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 76.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 76.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 76.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 76.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 76.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 76.
-LaTeX Font Info:    Redeclaring math accent \check on input line 76.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 76.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 76.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 76.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 76.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 76.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 76.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 76.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 76.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 76.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 76.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 76.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 76.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 76.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 76.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 76.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 76.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 78.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 78.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 78.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 78.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 78.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 78.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 78.
+LaTeX Font Info:    Redeclaring math accent \check on input line 78.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 78.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 78.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 78.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 78.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 76.
+(Font)              `operators' in the math version `normal' on input line 78.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU1/lmr/m/n on input line 76.
+(Font)                  OT1/cmr/m/n --> EU1/lmr/m/n on input line 78.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 76.
+(Font)              `operators' in the math version `bold' on input line 78.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> EU1/lmr/m/n on input line 76.
+(Font)                  OT1/cmr/bx/n --> EU1/lmr/m/n on input line 78.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  EU1/lmr/m/n --> EU1/lmr/m/n on input line 76.
+(Font)                  EU1/lmr/m/n --> EU1/lmr/m/n on input line 78.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> EU1/lmr/m/it on input line 76.
+(Font)                  OT1/cmr/m/it --> EU1/lmr/m/it on input line 78.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> EU1/lmr/bx/n on input line 76.
+(Font)                  OT1/cmr/bx/n --> EU1/lmr/bx/n on input line 78.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 76.
+(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 78.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 76.
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 78.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  EU1/lmr/m/n --> EU1/lmr/bx/n on input line 76.
+(Font)                  EU1/lmr/m/n --> EU1/lmr/bx/n on input line 78.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> EU1/lmr/bx/it on input line 76.
+(Font)                  OT1/cmr/bx/it --> EU1/lmr/bx/it on input line 78.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 76.
+(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 78.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 76.
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 78.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 76.
-(./title.tex
+(lastpage)             ! on input line 78.
+(./_minted-main/default-pyg-prefix.pygstyle) (./title.tex
 File: ./logo.jpg Graphic file (type QTm)
  <use  "./logo.jpg" >
 LaTeX Font Info:    Try loading font information for U+msa on input line 27.
@@ -1307,69 +1412,142 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]) [1]
 (./abstract.tex [1]) (./main.toc)
-\tf@toc=\write5
-\openout5 = `main.toc'.
+\tf@toc=\write8
+\openout8 = `main.toc'.
 
  [0
 
-] [0] (./presentation.tex
+] [1] (./presentation.tex
 Chapitre 1.
 Package hyperref Info: bookmark level for unknown mydef defaults to 0 on input 
-line 6.
-) (./existant.tex [1
+line 7.
+File: probleme.png Graphic file (type QTm)
+<use  "probleme.png" > [0
 
 ]
 Chapitre 2.
-) (./besoins.tex [2
 
-]
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 28.
+
+File: couchelora.png Graphic file (type QTm)
+<use  "couchelora.png" > [1
+
+] [2]
+File: networkArch.png Graphic file (type QTm)
+ <use  "networkArch.png" > [3])
+(./solutions.tex [4]
 Chapitre 3.
-) (./autre_partie.tex [3
+[5
 
-]
+] [6]
+LaTeX Font Info:    Font shape `EU1/lmtt/bx/n' in size <12> not available
+(Font)              Font shape `EU1/lmtt/b/n' tried instead on input line 130.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 133.
+ [7] [8] [9]
+File: Discovery.png Graphic file (type QTm)
+ <use  "Discovery.png" > [10]
+File: Collect.png Graphic file (type QTm)
+ <use  "Collect.png" >)
+(./simulations.tex [11]
 Chapitre 4.
-) (./resultats.tex [4
+\openout4 = `main.pyg'.
+
+\openout6 = `main.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"main.m
+intedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"main.pyg\",
+ \"rb\"); hasher.update(f.read()); f.close(); f = open(\"main.mintedmd5\", \"w\
+"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdigest() + chr(125) 
++ \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\\endinput\n \"); f
+.close();")...executed.
+
+(./main.mintedmd5)
+(./_minted-main/9ed84deef73062ed04394aa60f38b060680111d8.pygtex
+LaTeX Font Info:    Font shape `EU1/lmtt/bx/n' in size <8> not available
+(Font)              Font shape `EU1/lmtt/b/n' tried instead on input line 2.
+)
+File: LoRaGraph.jpg Graphic file (type QTm)
+
+<use  "LoRaGraph.jpg" > [12
 
 ]
+File: ex_radio.png Graphic file (type QTm)
+ <use  "ex_radio.png" > [13]
+File: chaine.png Graphic file (type QTm)
+ <use  "chaine.png" >
+[14]
+File: 3IN.png Graphic file (type QTm)
+ <use  "3IN.png" > [15]
+File: fat.png Graphic file (type QTm)
+ <use  "fat.png" > [16]
+Missing character: There is no ​ in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no ​ in font [lmroman10-regular]:mapping=tex-text!
+File: graphics_resultats/A/A.png Graphic file (type QTm)
+
+<use  "graphics_resultats/A/A.png" >
+File: graphics_resultats/A/NA.png Graphic file (type QTm)
+ <use  "graphics_resultats/A/NA.png" >
+File: graphics_resultats/A/AvsNA.png Graphic file (type QTm)
+
+<use  "graphics_resultats/A/AvsNA.png" >
+File: graphics_resultats/bat/Sim_MSG_SEND_data_bat_gw_degree_gw.png Graphic fil
+e (type QTm)
+
+<use  "graphics_resultats/bat/Sim_MSG_SEND_data_bat_gw_degree_gw.png" >
+[17]
+File: graphics_resultats/bat/Sim_MSG_SEND_data_bat_in_degree_GW.png Graphic fil
+e (type QTm)
+ <use  "graphics_resultats/bat/Sim_MSG_SEND_data_bat_in_degree_GW.png" >
+File: graphics_resultats/msg/Sim-MSG_GW-MSG_SEND-degree_GW.png Graphic file (ty
+pe QTm)
+
+<use  "graphics_resultats/msg/Sim-MSG_GW-MSG_SEND-degree_GW.png" >)
+(./programmation.tex [18] [19]
 Chapitre 5.
-) (./regret.tex [5
+) (./problemes.tex [20
 
 ]
 Chapitre 6.
-) (./bilan.tex [6
+) (./bilan.tex [21
 
 ]
 Chapitre 7.
-) [7
+) [22
 
-] (./annexes.tex [8
+] (./annexes.tex [23
 
 ] (./annexe1.tex) (./annexe2.tex))
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 133
-.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/euenc/eu1lmtt.fd
-File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
 
 AED: lastpage setting LastPage
-[9
+[24
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 138.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 138.
+runsystem(rm "main.mintedcmd")...executed.
+
+runsystem(rm "main.mintedmd5")...executed.
+
+runsystem(rm "main.pyg")...executed.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
  (./main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 138.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 138.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 138.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 134.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 134.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 134.
  ) 
 Here is how much of TeX's memory you used:
- 35963 strings out of 493591
- 673027 string characters out of 6143546
- 678546 words of memory out of 5000000
- 38838 multiletter control sequences out of 15000+600000
- 7320 words of font info for 47 fonts, out of 8000000 for 9000
+ 38507 strings out of 493591
+ 721784 string characters out of 6143546
+ 782708 words of memory out of 5000000
+ 41304 multiletter control sequences out of 15000+600000
+ 7368 words of font info for 53 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 62i,5n,96p,10365b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,12n,96p,10365b,625s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (14 pages).
+Output written on main.pdf (30 pages).

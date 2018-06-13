@@ -1,0 +1,362 @@
+# depslib dependency file v1.0
+1493197417 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\apps\ping-pong\main.c
+	<string.h>
+	<stdint.h>
+	<stdbool.h>
+	"platform.h"
+	"led.h"
+	<stdio.h>
+	"radio/sx1272-LoRaMisc.h"
+	"uart.h"
+	"radio/radio.h"
+	"sx1272-LoRa.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\platform.h
+	"XRange-Hal.h"
+	"utility.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\xrange\xrange-hal.h
+	"platform.h"
+	"xrange-hw-ver.h"
+	<stdint.h>
+	<stdbool.h>
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\xrange-hw-ver.h
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\inc\stm32l1xx.h
+	"core_cm3.h"
+	"system_stm32l1xx.h"
+	<stdint.h>
+	"stm32l1xx_conf.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\cmsis\core_cm3.h
+	<stdint.h>
+	<core_cmInstr.h>
+	<core_cmFunc.h>
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\cmsis\core_cminstr.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\cmsis\core_cmfunc.h
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\inc\system_stm32l1xx.h
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\inc\stm32l1xx_conf.h
+	"stm32l1xx_adc.h"
+	"stm32l1xx_aes.h"
+	"stm32l1xx_comp.h"
+	"stm32l1xx_crc.h"
+	"stm32l1xx_dac.h"
+	"stm32l1xx_dbgmcu.h"
+	"stm32l1xx_dma.h"
+	"stm32l1xx_exti.h"
+	"stm32l1xx_flash.h"
+	"stm32l1xx_fsmc.h"
+	"stm32l1xx_gpio.h"
+	"stm32l1xx_i2c.h"
+	"stm32l1xx_iwdg.h"
+	"stm32l1xx_lcd.h"
+	"stm32l1xx_opamp.h"
+	"stm32l1xx_pwr.h"
+	"stm32l1xx_rcc.h"
+	"stm32l1xx_rtc.h"
+	"stm32l1xx_sdio.h"
+	"stm32l1xx_spi.h"
+	"stm32l1xx_syscfg.h"
+	"stm32l1xx_tim.h"
+	"stm32l1xx_usart.h"
+	"stm32l1xx_wwdg.h"
+	"misc.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\inc\stm32l1xx_adc.h
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\inc\stm32l1xx_aes.h
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\inc\stm32l1xx_comp.h
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\inc\stm32l1xx_crc.h
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\inc\stm32l1xx_dac.h
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\inc\stm32l1xx_dbgmcu.h
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\inc\stm32l1xx_dma.h
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\inc\stm32l1xx_exti.h
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\inc\stm32l1xx_flash.h
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\inc\stm32l1xx_fsmc.h
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\inc\stm32l1xx_gpio.h
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\inc\stm32l1xx_i2c.h
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\inc\stm32l1xx_iwdg.h
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\inc\stm32l1xx_lcd.h
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\inc\stm32l1xx_opamp.h
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\inc\stm32l1xx_pwr.h
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\inc\stm32l1xx_rcc.h
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\inc\stm32l1xx_rtc.h
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\inc\stm32l1xx_sdio.h
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\inc\stm32l1xx_spi.h
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\inc\stm32l1xx_syscfg.h
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\inc\stm32l1xx_tim.h
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\inc\stm32l1xx_usart.h
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\inc\stm32l1xx_wwdg.h
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\inc\misc.h
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\xrange\utility.h
+	<stdint.h>
+	<stdbool.h>
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\xrange\led.h
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\radio\sx1272-loramisc.h
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\radio\radio.h
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\radio\sx1272-lora.h
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\misc.c
+	"misc.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\stm32l1xx_adc.c
+	"stm32l1xx_adc.h"
+	"stm32l1xx_rcc.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\stm32l1xx_aes.c
+	"stm32l1xx_aes.h"
+	"stm32l1xx_rcc.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\stm32l1xx_aes_util.c
+	"stm32l1xx_aes.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\stm32l1xx_comp.c
+	"stm32l1xx_comp.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\stm32l1xx_crc.c
+	"stm32l1xx_crc.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\stm32l1xx_dac.c
+	"stm32l1xx_dac.h"
+	"stm32l1xx_rcc.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\stm32l1xx_dbgmcu.c
+	"stm32l1xx_dbgmcu.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\stm32l1xx_dma.c
+	"stm32l1xx_dma.h"
+	"stm32l1xx_rcc.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\stm32l1xx_exti.c
+	"stm32l1xx_exti.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\stm32l1xx_flash.c
+	"stm32l1xx_flash.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\stm32l1xx_flash_ramfunc.c
+	"stm32l1xx_flash.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\stm32l1xx_fsmc.c
+	"stm32l1xx_fsmc.h"
+	"stm32l1xx_rcc.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\stm32l1xx_gpio.c
+	"stm32l1xx_gpio.h"
+	"stm32l1xx_rcc.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\stm32l1xx_i2c.c
+	"stm32l1xx_i2c.h"
+	"stm32l1xx_rcc.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\stm32l1xx_iwdg.c
+	"stm32l1xx_iwdg.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\stm32l1xx_lcd.c
+	"stm32l1xx_lcd.h"
+	"stm32l1xx_rcc.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\stm32l1xx_opamp.c
+	"stm32l1xx_opamp.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\stm32l1xx_pwr.c
+	"stm32l1xx_pwr.h"
+	"stm32l1xx_rcc.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\stm32l1xx_rcc.c
+	"stm32l1xx_rcc.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\stm32l1xx_rtc.c
+	"stm32l1xx_rtc.h"
+	"stm32l1xx_rcc.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\stm32l1xx_sdio.c
+	"stm32l1xx_sdio.h"
+	"stm32l1xx_rcc.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\stm32l1xx_spi.c
+	"stm32l1xx_spi.h"
+	"stm32l1xx_rcc.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\stm32l1xx_syscfg.c
+	"stm32l1xx_syscfg.h"
+	"stm32l1xx_rcc.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\stm32l1xx_tim.c
+	"stm32l1xx_tim.h"
+	"stm32l1xx_rcc.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\stm32l1xx_usart.c
+	"stm32l1xx_usart.h"
+	"stm32l1xx_rcc.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\spl\src\stm32l1xx_wwdg.c
+	"stm32l1xx_wwdg.h"
+	"stm32l1xx_rcc.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\radio\radio.c
+	"platform.h"
+	"radio.h"
+	"sx1232.h"
+	"sx1272.h"
+	"sx1276.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\radio\sx1272.h
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\radio\sx1272-fsk.c
+	<string.h>
+	<math.h>
+	"platform.h"
+	"radio.h"
+	"sx1272-Hal.h"
+	"sx1272.h"
+	"sx1272-FskMisc.h"
+	"sx1272-Fsk.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\radio\sx1272-hal.h
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\radio\sx1272-fskmisc.h
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\radio\sx1272-fsk.h
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\radio\sx1272-fskmisc.c
+	<math.h>
+	"platform.h"
+	"sx1272-Hal.h"
+	"sx1272.h"
+	"sx1272-Fsk.h"
+	"sx1272-FskMisc.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\radio\sx1272-lora.c
+	<string.h>
+	"platform.h"
+	"radio.h"
+	"sx1272-Hal.h"
+	"sx1272.h"
+	"sx1272-LoRaMisc.h"
+	"sx1272-LoRa.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\radio\sx1272-loramisc.c
+	"platform.h"
+	"sx1272-Hal.h"
+	"sx1272.h"
+	"sx1272-LoRa.h"
+	"sx1272-LoRaMisc.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\radio\sx1272.c
+	"platform.h"
+	"radio.h"
+	"sx1272.h"
+	"sx1272-Hal.h"
+	"sx1272-Fsk.h"
+	"sx1272-LoRa.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\startup_stm32l1xx_mdp.s
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\system_stm32l1xx.c
+	"stm32l1xx.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\xrange\led.c
+	"led.h"
+	"platform.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\xrange\rtc.c
+	"rtc.h"
+	"stm32l1xx.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\xrange\rtc.h
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\xrange\spi.c
+	<stdint.h>
+	"stm32l1xx_spi.h"
+	"spi.h"
+	"platform.h"
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\xrange\spi.h
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\xrange\stm32fxxx_it.c
+	"stm32l1xx_it.h"
+	"XRange-Hal.h"
+	<stdio.h>
+
+1492625895 c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\xrange\stm32l1xx_it.h
+	"stm32l1xx.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\xrange\sx1272-hal.c
+	<stdint.h>
+	<stdbool.h>
+	"platform.h"
+	"spi.h"
+	"../radio/sx1272-Hal.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\xrange\utility.c
+	"utility.h"
+
+1492625895 source:c:\users\florent\documents\homenolot\doc\recherche\waspmote\lora-netblocks\xrange-master\examples\src\xrange\xrange-hal.c
+	<stdint.h>
+	"spi.h"
+	"led.h"
+	"XRange-Hal.h"
+
