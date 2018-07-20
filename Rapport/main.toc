@@ -41,6 +41,9 @@
 \contentsline {subsection}{\numberline {4.4.4}Générations des graphes}{16}{subsection.4.4.4}
 \contentsline {subsection}{\numberline {4.4.5}Résultats}{17}{subsection.4.4.5}
 \contentsline {chapter}{\numberline {5}Programmation}{20}{chapter.5}
-\contentsline {chapter}{\numberline {6}Complément}{21}{chapter.6}
-\contentsline {chapter}{\numberline {7}Bilan}{22}{chapter.7}
-\contentsline {part}{Annexes}{24}{part*.18}
+\contentsline {chapter}{\numberline {6}Problème}{21}{chapter.6}
+\contentsline {section}{\numberline {6.1}Solutions de chiffrement possibles LGW <->IN}{21}{section.6.1}
+\contentsline {section}{\numberline {6.2}Problème final }{21}{section.6.2}
+\contentsline {section}{\numberline {6.3}Conclusion sur le chiffrement}{22}{section.6.3}
+\contentsline {chapter}{\numberline {7}Bilan}{23}{chapter.7}
+\contentsline {part}{Annexes}{25}{part*.19}

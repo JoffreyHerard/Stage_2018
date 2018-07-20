@@ -420,13 +420,18 @@ LoRaMacFlags_t LoRaMacFlags;
 
 /*USER CODE JOFFREY BEGIN*/
 
-uint8_t *LoRaMacAppKeysave ;
-uint8_t *LoRaMacAppNoncesave;
-uint8_t LoRaMacDevNoncesave;
-uint8_t *LoRaMacNwkSKeysave;
-uint8_t *LoRaMacAppSKeysave;
+
+
+uint8_t LoRaMacAppKeysave[16] ;
+uint8_t LoRaMacAppNoncesave[8];
+uint8_t LoRaMacNwkSKeysave[16];
+uint8_t LoRaMacAppSKeysave[16];
+
+uint16_t LoRaMacDevNoncesave;
 uint32_t LoRaMacDevAddrsave;
+
 uint32_t micRxsave = 0;
+uint32_t micRxsave1 = 0;
 /*USER CODE JOFFREY END*/
 /*!
  * \brief Function to be executed on Radio Tx Done event
@@ -2034,7 +2039,7 @@ static LoRaMacStatus_t ScheduleTx( bool allowDelayedTx )
 
     if( status != LORAMAC_STATUS_OK )
     {
-        if( ( status == LORAMAC_STATUS_DUTYCYCLE_RESTRICTED ) && 
+        if( ( status == LORAMAC_STATUS_DUTYCYCLE_RESTRICTED ) &&
             ( allowDelayedTx == true ) )
         {
             // Allow delayed transmissions. We have to allow it in case
@@ -3489,11 +3494,9 @@ void LoRaMacTestSetChannel( uint8_t channel )
 {
     Channel = channel;
 }
-char* toggleSessionElement(){
-
-	char messageAnswer[1024] ;
+void toggleSessionElement(char * messageAnswer){
 	char buffer[124];
-	memset( messageAnswer, '\0', sizeof(char)*1024 );
+	memset( messageAnswer, '\0', sizeof(char)*140 );
 
 	memset( buffer, '\0', sizeof(char)*124 );
 	sprintf(buffer, "%02X",LoRaMacAppKey[0]);
@@ -3538,7 +3541,7 @@ char* toggleSessionElement(){
 	PRINTF("DevADDR ");
 	PRINTF(" = %X",LoRaMacDevAddr);
 	memset( buffer, '\0', sizeof(char)*124 );
-	sprintf(buffer, "%02X",LoRaMacDevAddr);
+	sprintf(buffer, "%X",LoRaMacDevAddr);
 	strcat(messageAnswer,buffer);
 	PRINTF("\n\r");
 
@@ -3549,37 +3552,92 @@ char* toggleSessionElement(){
 	sprintf(buffer, "%X",micRxsave);
 	strcat(messageAnswer,buffer);
 	PRINTF("\n\r");
-	PRINTF(messageAnswer);
+	//PRINTF(messageAnswer);
 	PRINTF("\n\r");
-	return messageAnswer;
 }
-void modifySessionElement(uint8_t *newLoRaMacAppKey,uint8_t* newLoRaMacAppNonce,uint8_t newLoRaMacDevNonce,uint8_t *newLoRaMacNwkSKey,uint8_t *newLoRaMacAppSKey, uint32_t newLoRaMacDevAddr,uint32_t newmicRxsave){
-	LoRaMacAppKey=newLoRaMacAppKey;
-	LoRaMacAppNonce=newLoRaMacAppNonce;
-	LoRaMacDevNonce=newLoRaMacDevNonce;
-	for(int i = 0;i<16; i++){
+
+
+void toggleSessionElementSave(){
+
+
+	PRINTF("Key ");
+	PRINTF(" %02X", LoRaMacAppKeysave[0]) ;for(int i=1; i<16; i++) {PRINTF("%02X", LoRaMacAppKeysave[i]);}; PRINTF("\n\n\r");
+	PRINTF("\n\r");
+
+	PRINTF("AppNonce ");
+	PRINTF(" = %02X", LoRaMacAppNoncesave[0]);for(int i=1; i<8; i++) {PRINTF("%02X", LoRaMacAppNoncesave[i]);}; PRINTF("\n\n\r");
+	PRINTF("\n\r");
+
+	PRINTF("DevNonce ");
+	PRINTF(" = %02X", LoRaMacDevNoncesave);
+	PRINTF("\n\r");
+
+	PRINTF("NwkSKey ");
+	PRINTF(" = %02X", LoRaMacNwkSKeysave[0]) ;for(int i=1; i<16; i++) {PRINTF("%02X", LoRaMacNwkSKeysave[i]);}; PRINTF("\n\n\r");
+	PRINTF("\n\r");
+	PRINTF("AppSKey ");
+
+
+	PRINTF(" = %02X", LoRaMacAppSKeysave[0]) ;for(int i=1; i<16; i++) {PRINTF("%02X", LoRaMacAppSKeysave[i]); }; PRINTF("\n\n\r");
+	PRINTF("\n\r");
+
+	PRINTF("DevADDR ");
+	PRINTF(" = %X",LoRaMacDevAddrsave);
+	PRINTF("\n\r");
+
+	PRINTF("MIC :");
+	PRINTF("= %X",micRxsave1);
+	PRINTF("\n\r");
+}
+
+
+
+
+void modifySessionElement(uint8_t *newLoRaMacAppKey,uint8_t* newLoRaMacAppNonce,uint16_t* newLoRaMacDevNonce,uint8_t *newLoRaMacNwkSKey,uint8_t *newLoRaMacAppSKey, uint32_t* newLoRaMacDevAddr,uint32_t* newmicRxsave){
+	//ok
+	PRINTF("MODIFYING SESSION ELEMENT \r\n");
+	for(int i =0;i<16;i++){
+		LoRaMacAppKey[i] =newLoRaMacAppKey[i];
 		LoRaMacNwkSKey[i]=newLoRaMacNwkSKey[i];
 		LoRaMacAppSKey[i]=newLoRaMacAppSKey[i];
 	}
-	LoRaMacDevAddr=newLoRaMacDevAddr;
-	micRxsave=newmicRxsave;
+	//ok
+	for(int i =0;i<8;i++){
+		LoRaMacAppNonce[i] =newLoRaMacAppNonce[i];
+	}
+	LoRaMacDevAddr 	 = *newLoRaMacDevAddr; // ok
+	LoRaMacDevNonce  = *newLoRaMacDevNonce; // ok
+	micRxsave		 = *newmicRxsave; //ok
 }
 void resetSessionElement(void){
-	LoRaMacAppKey=LoRaMacAppKeysave;
-	LoRaMacAppNonce=LoRaMacAppNoncesave;
-	LoRaMacDevNonce=LoRaMacDevNoncesave;
-	for(int i = 0;i<16; i++){
-			LoRaMacNwkSKey[i]=LoRaMacNwkSKeysave[i];
-			LoRaMacAppSKey[i]=LoRaMacAppSKeysave[i];
+	PRINTF("RESETING SESSION ELEMENT\r\n");
+	//ok
+	for(int i =0;i<16;i++){
+		LoRaMacAppKey[i] =LoRaMacAppKeysave[i];
+		LoRaMacNwkSKey[i]=LoRaMacNwkSKeysave[i];
+		LoRaMacAppSKey[i]=LoRaMacAppSKeysave[i];
 	}
-	LoRaMacDevAddr=LoRaMacDevAddrsave;
+	//ok
+	for(int i =0;i<8;i++){
+		LoRaMacAppNonce[i] =LoRaMacAppNoncesave[i];
+	}
+	LoRaMacDevAddr 	 = LoRaMacDevAddrsave; // ok
+	LoRaMacDevNonce  = LoRaMacDevNoncesave; // ok
+	micRxsave = micRxsave1;
 }
 void saveSessionElement(void){
-	/*TO DO */
-	/*uint8_t *LoRaMacAppKeysave;
-	uint8_t LoRaMacAppNoncesave;
-	uint8_t *LoRaMacDevNoncesave;
-	uint8_t *LoRaMacNwkSKeysave;
-	uint8_t *LoRaMacAppSKeysave;
-	uint32_t LoRaMacDevAddrsave;*/
+	PRINTF("SAVING SESSION ELEMENT\r\n");
+	//ok
+	for(int i =0;i<16;i++){
+		LoRaMacAppKeysave[i] =LoRaMacAppKey[i];
+		LoRaMacNwkSKeysave[i]=LoRaMacNwkSKey[i];
+		LoRaMacAppSKeysave[i]=LoRaMacAppSKey[i];
+	}
+	//ok
+	for(int i =0;i<8;i++){
+		LoRaMacAppNoncesave[i] =LoRaMacAppNonce[i];
+	}
+	LoRaMacDevAddrsave =LoRaMacDevAddr; // ok
+	LoRaMacDevNoncesave = LoRaMacDevNonce; // ok
+	micRxsave1=micRxsave;
 }

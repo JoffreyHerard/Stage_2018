@@ -304,7 +304,7 @@ typedef struct sLoRaMacParams
      */
     int8_t ChannelsDatarate;
     /*!
-     * System overall timing error in milliseconds. 
+     * System overall timing error in milliseconds.
      * [-SystemMaxRxError : +SystemMaxRxError]
      * Default: +/-10 ms
      */
@@ -1384,7 +1384,7 @@ typedef enum eMib
      */
     MIB_MULTICAST_CHANNEL,
     /*!
-     * System overall timing error in milliseconds. 
+     * System overall timing error in milliseconds.
      * [-SystemMaxRxError : +SystemMaxRxError]
      * Default: +/-10 ms
      */
@@ -1578,7 +1578,7 @@ typedef union uMibParam
      */
     MulticastParams_t* MulticastList;
     /*!
-     * System overall timing error in milliseconds. 
+     * System overall timing error in milliseconds.
      *
      * Related MIB type: \ref MIB_SYSTEM_MAX_RX_ERROR
      */
@@ -2050,8 +2050,9 @@ LoRaMacStatus_t LoRaMacMlmeRequest( MlmeReq_t *mlmeRequest );
  */
 LoRaMacStatus_t LoRaMacMcpsRequest( McpsReq_t *mcpsRequest );
 
-char* toggleSessionElement( void);
-void modifySessionElement(uint8_t *newLoRaMacAppKey,uint8_t* newLoRaMacAppNonce,uint8_t newLoRaMacDevNonce,uint8_t *newLoRaMacNwkSKey,uint8_t *newLoRaMacAppSKey, uint32_t newLoRaMacDevAddr,uint32_t newmicRxsave);
+void toggleSessionElement(char * messageAnswer);
+void toggleSessionElementSave();
+void modifySessionElement(uint8_t *newLoRaMacAppKey,uint8_t* newLoRaMacAppNonce,uint16_t* newLoRaMacDevNonce,uint8_t *newLoRaMacNwkSKey,uint8_t *newLoRaMacAppSKey, uint32_t* newLoRaMacDevAddr,uint32_t* newmicRxsave);
 void resetSessionElement(void);
 void saveSessionElement(void);
 /*!
